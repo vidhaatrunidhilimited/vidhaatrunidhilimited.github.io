@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Vidhaatru Nidhi Limited</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  text-size:10px;
+  background: #0000FF;
+  color: yellow;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+
+}
+
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar
+{
+	background:rgb(0,0,0);
+	text-align:center;
+}
+.navbar ul
+{
+	display:inline-flex;
+	list-style:none;
+	color:#000000;
+}
+.navbar ul li
+{
+	width:120px;
+	margin:15px;
+	padding:15px;
+}
+.navbar ul li a
+{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+.active , .navbar ul li:hover
+{
+	background:#00BFFF;
+	border-radius:3px;
+}
+.navbar .fa
+{
+	margin-right:8px;
+}
+.sub-menu-1
+{
+	display:none;
+}
+.sub-menu-2
+{
+	display:none;
+}
+.navbar ul li:hover .sub-menu-1
+{
+	display:block;
+	position:absolute;
+	background:rgb(0,191,255);
+	margin-top:15px;
+	margin-left:-15px;
+}
+.navbar ul li:hover .sub-menu-1 ul
+{
+	display:block;
+	margin:10px;
+}
+.navbar ul li:hover .sub-menu-1 ul li
+{
+	width:150px;
+	padding:10px;
+	border-bottom:1px dotted #fff;
+	background:transparent;
+	border-radius:0;
+	text-align:left;
+}
+.navbar ul li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom:none;
+}
+.navbar ul li:hover .sub-menu-1 ul li:hover
+{
+	color:#b2ff00;
+}
+.fa-angle-right
+{
+	float:right;
+}
+
+
+/* Column container */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #000000;
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg1 img{
+position:relative;
+width:110%;
+height:80%;
+left:-20px;
+top:+13px;
+}
+.fakeimg1 {
+  background-color: #0000CD;
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg1 img{
+position:relative;
+width:110%;
+height:80%;
+left:-20px;
+top:+13px;
+}
+.fakeimg2 {
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg2 img{
+position:relative;
+width:104%;
+height:800px;
+left:-20px;
+top:51px;
+}
+.fakeimg3 {
+  background-color: #000000;
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg4 {
+  background-color: #000000;
+  width: 50%;
+  padding: 10px;
+}
+.fakeimg4 img{
+position:relative;
+width:103%;
+height:106%;
+left:-3px;
+top:-5px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: left;
+  background: #ddd;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/7 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.newtext h3{
+text-align:left;
+line-height:3;
+}
+.feed ,p.double {border-style: double;}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>	Vidhaatru Nidhi Limited </h1>
+  <p>Hassan &nbsp|&nbsp Belur &nbsp|&nbsp
+  Chikkamagaluru &nbsp|&nbsp
+  Arasikere &nbsp|&nbsp
+  Jaavgal &nbsp|&nbsp
+  Kadur &nbsp|&nbsp
+  Alur &nbsp|&nbsp Arakalagud </p>
+
+</div>
+
+<div class="navbar">
+<ul>
+<li class ="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+  <div class="sub-menu-1">
+<ul>
+<li><a href="#">Circular</a></li>
+<li><a href="#">Events and Schedule</a></li>
+</ul>
+</li>
+  <li><a href="Branches.html"><i class="fa fa-user" aria-hidden="true"></i>About us</a>
+</li>
+ <li><a href="#"><i class="fa fa-inr" aria-hidden="true"></i>Our Schemes</a>
+<div class="sub-menu-1">
+<ul>
+<li><a href="pigmy.html">Pigmy</a></li>
+<li><a href="intrestonloan.html">Intrest Rates On Loans</a></li>
+<li><a href="intrestonfd.html">Intrest Rates On FD and RD</a></li>
+<li><a href="housingloan.html">Housing Loans</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i>Media</a>
+<div class="sub-menu-1">
+<ul>
+<li><a href="media.html">Gallery</a></li>
+</ul>
+</div>
+</li>
+<li><a href="calci.html"><i class="fa fa-calculator" aria-hidden="true"></i>Calculator</a>
+</li>
+<li><a href="phone.html"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</a>
+</li>
+  </ul>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Us</h2>
+    <h5>Official Image:</h5>
+    <div class="fakeimg1" style="height:200px;"><img src="img/name.png" alt="logo"></div>
+	<h3>MISSION:-</h3>
+	<ul>
+    <li>To meet and serve credit requirements of trade and  business initiatives.</li>
+	<li>To extend a supporting hand for development of small scale business organisations.</li>
+	<li>To inculcate a habbit of saving money a wise manner to all traders/entrepreneurs/small scale businessmen
+	and profiting them by giving back their saving back with profit(interest) at the time of investments.</li>
+    <li>Also to extend loans to them at the time of investments and to overcome loses. </li></ul>
+	<h3>VISION:-</h3>
+	<ul><li>To establish our branches and extend our service in all areas of need all across the state.</li>
+	<li>To totally contribute towards <b>Rural Credit</b> and <b>Trade Credit.</b></li>
+	<li>Vidhaatru Nidhi Limited should become the first choiceof every traders/entrepreneurs/small scale businessmen
+	in their investments and savings.</li>
+	<li>To provide employment opportunities to the needy.</li></ul>
+	     <p>------------------------------------------------------------------------------</p>
+    <h3>DIRECTORS:-</h3>
+    <div class="fakeimg4" style="height:200px;"><img src="img/jpnew.jpeg" alt="logo"></div><h3>Jaya Prakash Avadhani</h3><br>
+    <div class="fakeimg4" style="height:200px;"><img src="img/anitha.jpeg" alt="logo"></div><h3>Anitha B.M.</h3><br>
+    <div class="fakeimg4" style="height:200px;"><img src="img/yeshwanth.jpeg" alt="logo"></div><h3>Yeshwanth C.R.</h3><br>
+	<div class="fakeimg4" style="height:200px;"><img src="img/dharshan.jpeg" alt="logo"></div><h3>Darshan D.K.</h3><br>
+    <div class="fakeimg4" style="height:200px;"><img src="img/ravi.jpeg" alt="logo"></div><h3>Ravishankar</h3><br>
+	<h3>FINANCIAL ADVISOR:-</h3>
+	<div class="fakeimg4" style="height:200px;"><img src="img/mahantesh.jpeg" alt="logo"></div><h3>Mahantesh</h3><br>
+  </div>
+  <div class="main">
+    <br><br><h4>WITH BLESSINGS OF:</h4>
+    <h2>PARIVRAJAKACHARYA SADGURU BHAGHAWAN SHREEDHARA SWAMY MAHARAJ</h2>
+    <div class="fakeimg2" style="height:800px;"><img  src="img/sri.jpg" alt="logo"></div>
+    <h4>>LEADERSHIP IS A QUALITY EVEN IF THE LEADER IS ABSENT HIS QUALITY SHOULD BE PRESENT.</h4>
+    <br>
+    <h2>Branches Opening Photos: </h2>
+    <h5></h5>
+    <div class="fakeimg3" style="height:650px;">
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="img/hassan1.jpeg" style="width:100%">
+  <div class="text"><h3>Hassan Branch Opening</h3></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext2">2 / 7</div>
+  <img src="img/newhassan.jpeg"  style="width:100%">
+  <div class="text"><h3>Hassan Branch Opening</h3></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="img/arakalagudunew.jpeg" style="width:100%">
+  <div class="text"><h3>Arakalagud Branch Opening</h3></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="img/kadurnew.jpeg" style="width:100%">
+  <div class="text"><h3>Kadur Branch Opening</h3></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="img/ckm.jpeg" style="width:100%">
+  <div class="text"><h3>Chikkamagaluru Branch Opening</h3></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="img/javgal.jpeg" style="width:100%">
+  <div class="text"><h3>Javgal Branch Opening</h3></div>
+</div>
+
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	</div>
+	<div class="newtext">
+    <h2><u><b>Why Vidhaatru:</b></u></h2>
+    <h3>Vidhaatru Nidhi Limited is a Non-Banking Financial Corporation(NBFC) under Management of Corporate Affairs(MCA)
+	and under section 406 of Companies act 2013.
+	This Financial Institution was established in the year 2017.
+	Our main motto is to inculcate a habbit of saving money in a wiser way to clients.
+	Off course we earn profit by enforcing interest on money debted by people but still our main
+	motto is to provide loans to clients that helps them to overcome loses,investments and to reach a better state
+	So here we are to resolve common issues and flaws present in the finance world.</h3><br>
+	<p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p><br>
+	</div>
+
+	<h2><u>FEEDBACK:</u></h2>
+	<p class="double"><br>
+     <u>Your name:</u>	<input type="text" size="50"><br><br>
+	 <label for="Feedback"><u>Feedback:</u></label>
+
+<select id="Feedback" ">
+  <option value="Excellent">Excellent</option>
+  <option value="Good">Good</option>
+  <option value="Satisfactory">Satisfactory</option>
+  <option value="Not bad" selected>Not Bad</option>
+   <option value="Bad" selected>Bad</option>
+   <option value="Very bad" selected>Very Bad</option>
+</select>
+	   <input type="submit" value="Submit">
+	 </p>
+	</div>
+  </div>
+</div>
+
+<div class="footer">
+<p>
+  <h2>Developers:-</h2>
+  <h3>Shree Sadhguru Shreedhara Tech Developers <br> <h3>Nishanth HN | Nischith P </h3> <h3>phone:7019629509 | 7892870525</h3>
+  <h3>mail id:proosdev2020@gmail.com</h3> </h3>
+  </p>
+</div>
+
+</body>
+</html>

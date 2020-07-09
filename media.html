@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vidhaatru Nidhi Limited</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #0000FF;
+  color: yellow;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar
+{
+	background:rgb(0,0,0);
+	text-align:center;
+}
+.navbar ul
+{
+	display:inline-flex;
+	list-style:none;
+	color:#000000;
+}
+.navbar ul li
+{
+	width:120px;
+	margin:15px;
+	padding:15px;
+}
+.navbar ul li a
+{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+.active , .navbar ul li:hover
+{
+	background:#00BFFF;
+	border-radius:3px;
+}
+.navbar .fa
+{
+	margin-right:8px;
+}
+.sub-menu-1
+{
+	display:none;
+}
+.sub-menu-2
+{
+	display:none;
+}
+.navbar ul li:hover .sub-menu-1
+{
+	display:block;
+	position:absolute;
+	background:rgb(0,191,255);
+	margin-top:15px;
+	margin-left:-15px;
+}
+.navbar ul li:hover .sub-menu-1 ul
+{
+	display:block;
+	margin:10px;
+}
+.navbar ul li:hover .sub-menu-1 ul li
+{
+	width:150px;
+	padding:10px;
+	border-bottom:1px dotted #fff;
+	background:transparent;
+	border-radius:0;
+	text-align:left;	
+}
+.navbar ul li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom:none;
+}
+.navbar ul li:hover .sub-menu-1 ul li:hover
+{
+	color:#b2ff00;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg1 img{
+position:relative;
+width:110%;
+height:80%;
+left:-20px;
+top:+13px;
+}
+.fakeimg1 {
+  background-color: #0000CD;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: left;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>	Vidhaatru Nidhi Limited</h1>
+  <p>Hassan &nbsp|&nbsp Belur &nbsp|&nbsp
+  Chikkamagaluru &nbsp|&nbsp
+  Arasikere &nbsp|&nbsp
+  Jaavgal &nbsp|&nbsp
+  Kadur &nbsp|&nbsp
+  Alur &nbsp|&nbsp Arakalagud</p>
+  
+</div>
+
+<div class="navbar">
+<ul>
+<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+  <div class="sub-menu-1">
+<ul>
+<li><a href="#">Circular</a></li>
+<li><a href="#">Events and Schedule</a></li>
+</ul>
+</li>
+<li><a href="Branches.html"><i class="fa fa-user" aria-hidden="true"></i>About us</a>
+</li>
+  <li><a href="#"><i class="fa fa-inr" aria-hidden="true"></i>Our Schemes</a>
+<div class="sub-menu-1">
+<ul>
+<li><a href="pigmy.html">Pigmy</a></li>
+<li><a href="intrestonfd.html">Intrest Rates On Loans</a></li>
+<li><a href="intrestonfd.html">Intrest Rates On FD and RD</a></li>
+<li><a href="housingloan.html">Housing Loans</a></li>
+</ul>
+</div>
+</li>
+<li class ="active"><a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i>Media</a>
+<div class="sub-menu-1">
+<ul>
+<li class ="active"><a href="media.html">Gallery</a></li>
+</ul>
+</div>
+</li>
+<li><a href="calci.html"><i class="fa fa-calculator" aria-hidden="true"></i>Calculator</a>
+</li>
+<li><a href="phone.html"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</a>
+</li>
+  </ul>
+</div>
+
+
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/ etc) */
+.numbertext {
+  color: #000000;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #715151;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+
+<h1>Photos of:</h1><br>
+<p><h2>OFFICE &nbsp|&nbsp MEETS  &nbsp|&nbsp TRIPS &nbsp|&nbsp OTHERS: </h2></p><br>
+<h4>Every we plan a trip to different places as a recreation, we organize annual meets to discuss and plan with all our directors, employees
+and facilitators.<h4><br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="img/SS1.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 15</div>
+  <img src="img/arakalagudunew.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 15</div>
+  <img src="img/ckm.jpeg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 15</div>
+  <img src="img/kadurnew.jpeg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 15</div>
+  <img src="img/ssopen1.jpeg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 15</div>
+  <img src="img/ssopen6.jpeg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 15</div>
+  <img src="img/ssopen3.jpeg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 15</div>
+  <img src="img/ssopen4.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+  </div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 15</div>
+  <img src="img/ssopen5.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade">
+  <div class="numbertext">9 / 15</div>
+  <img src="img/ssopen7.jpeg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="img/SS2.jpeg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 15</div>
+  <img src="img/sstravel1.jpeg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">11 / 15</div>
+  <img src="img/sstravel2.jpeg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">12 / 15</div>
+  <img src="img/sstravel3.jpeg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">13 / 15</div>
+  <img src="img/ssmeet1.jpeg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">14 / 15</div>
+  <img src="img/ssmeet2.jpeg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">15 / 15</div>
+  <img src="img/ssmeet3.jpeg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="img/repeatnew.png" style="width:100%">
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>   
+  <span class="dot"></span>  
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html> 

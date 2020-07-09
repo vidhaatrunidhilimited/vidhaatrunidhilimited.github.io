@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Vidhaatru Nidhi Limited</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #0000FF;
+  color: yellow;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar
+{
+	background:rgb(0,0,0);
+	text-align:center;
+}
+.navbar ul
+{
+	display:inline-flex;
+	list-style:none;
+	color:#000000;
+}
+.navbar ul li
+{
+	width:120px;
+	margin:15px;
+	padding:15px;
+}
+.navbar ul li a
+{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+.active , .navbar ul li:hover
+{
+	background:#00BFFF;
+	border-radius:3px;
+}
+.navbar .fa
+{
+	margin-right:8px;
+}
+.sub-menu-1
+{
+	display:none;
+}
+.sub-menu-2
+{
+	display:none;
+}
+.navbar ul li:hover .sub-menu-1
+{
+	display:block;
+	position:absolute;
+	background:rgb(0,191,255);
+	margin-top:15px;
+	margin-left:-15px;
+}
+.navbar ul li:hover .sub-menu-1 ul
+{
+	display:block;
+	margin:10px;
+}
+.navbar ul li:hover .sub-menu-1 ul li
+{
+	width:150px;
+	padding:10px;
+	border-bottom:1px dotted #fff;
+	background:transparent;
+	border-radius:0;
+	text-align:left;	
+}
+.navbar ul li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom:none;
+}
+.navbar ul li:hover .sub-menu-1 ul li:hover
+{
+	color:#b2ff00;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg1 img{
+position:relative;
+width:110%;
+height:80%;
+left:-20px;
+top:+13px;
+}
+.fakeimg1 {
+  background-color: #0000CD;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: left;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+.main ,p.double {border-style: double;}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>	Vidhaatru Nidhi Limited</h1>
+  <p>Hassan &nbsp|&nbsp Belur &nbsp|&nbsp
+  Chikkamagaluru &nbsp|&nbsp
+  Arasikere &nbsp|&nbsp
+  Jaavgal &nbsp|&nbsp
+  Kadur &nbsp|&nbsp
+  Alur &nbsp|&nbsp Arakalagud</p>
+  
+</div>
+
+<div class="navbar">
+<ul>
+<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+  <div class="sub-menu-1">
+<ul>
+<li><a href="#">Circular</a></li>
+<li><a href="#">Events and Schedule</a></li>
+</ul>
+</li>
+  <li><a href="Branches.html"><i class="fa fa-user" aria-hidden="true"></i>About us</a>
+</li>
+  <li><a href="#"><i class="fa fa-inr" aria-hidden="true"></i>Our Schemes</a>
+<div class="sub-menu-1">
+<ul>
+<li><a href="pigmy.html">Pigmy</a></li>
+<li><a href="intrestonfd.html">Intrest Rates On Loans</a></li>
+<li><a href="intrestonfd.html">Intrest Rates On FD and RD</a></li>
+<li><a href="housingloan.html">Housing Loans</a></li>
+</ul>
+</div>
+</li>
+<li><a href="media.html"><i class="fa fa-picture-o" aria-hidden="true"></i>Media</a>
+<div class="sub-menu-1">
+<ul>
+<li><a href="media.html">Gallery</a></li>
+</ul>
+</div>
+</li>
+<li><a href="calci.html"><i class="fa fa-calculator" aria-hidden="true"></i>Calculator</a>
+</li>
+<li class ="active"><a href="phone.html"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</a>
+</li>
+  </ul>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Us</h2>
+    <h5>Official Image:</h5>
+    <div class="fakeimg1" style="height:200px;"><img src="img/name.png" alt="logo"></div>
+	<h3>MISSION:-</h3>
+	<ul>
+    <li>To meet and serve credit requirements of trade and  business initiatives.</li>
+	<li>To extend a supporting hand for development of small scale business organisations.</li>
+	<li>To inculcate a habbit of saving money a wise manner to all traders/entrepreneurs/small scale businessmen
+	and profiting them by giving back their saving back with profit(interest) at the time of investments.</li>
+    <li>Also to extend loans to them at the time of investments and to overcome loses. </li></ul>
+	<h3>VISION:-</h3>
+	<ul><li>To establish our branches and extend our service in all areas of need all across the state.</li>
+	<li>To totally contribute towards <b>Rural Credit</b> and <b>Trade Credit.</b></li>
+	<li>Vidhaatru Nidhi Limited should become the first choiceof every traders/entrepreneurs/small scale businessmen 
+	in their investments and savings.</li>
+	<li>To provide employment opportunities to the needy.</li></ul>
+	   <p>------------------------------------------------------------------------------</p>
+  
+  </div>
+  <div class="main">
+  <h1>Branches Contacts Below</h1>
+  <p class="double">
+  
+   
+	<h2><u>Hassan Branch:</u></h2>
+    <h5>Title description, Dec 7, 2017</h5>
+		<h3><b><u>Address:</u></b><br>
+	No.116 Behind BSNL Bhavan,<br>Kempanahalli,Hassan-573201<br>
+	contact:9880378903 Ravishankar.</h3>
+    
+    <br>
+	  <p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+	  
+    <h2><u>Belur Branch:</u></h2>
+    <h5>Title description, Sep 2, 2017</h5>
+	<h3><b><u>Address:</u></b><br>
+	near chaudeshwari temple,<br>Devanga Street,belur-573115<br>
+	contact:08177230656</h3>
+    <br>
+	  <p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+	  
+	<h2><u>Chikkamagaluru Branch:</u></h2>
+    <h5>Title description, Dec 7, 2017</h5>
+	<h3><b><u>Address:</u></b><br>
+	 Near KSRTC bus stand,Opposite to soundarya hotel,<br> IG road,Chikkamagaluru-577101<br>
+	 contact:8262295503</h3>
+    
+    <br>
+	  <p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <h2><u>Arasikere Branch:</u></h2>
+    <h5>Title description, Sep 2, 2017</h5>
+<h3><b><u>Address:</u></b><br>
+	Opposite to Taluk office,<br> near St.Mary's college,Arsikere-573103<br>
+	contact:08174231024</h3>
+    <br>
+	  <p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+	<h2><u>Arakalagud Branch:</u></h2>
+    <h5>Title description, Dec 7, 2017</h5>
+	<h3><b><u>Address:</u></b><br>
+	 No.183 ,Mayamma Complex, Keralapura road<br>,Arakalagud-573102
+	contact:9590028005</h3>
+    
+    <br>
+	  <p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <h2><u>Jaavgal Branch:</u></h2>
+    <h5>Title description, Sep 2, 2017</h5>
+	 <h3><b><u>Address:</u></b><br>
+	Belur-Banavara main road, <br>opposite to government primary school, Javgal-573125<br>
+	contact:</h3>
+    <br>
+	  <p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+	<h2><u>Kadur Branch:</u></h2>
+    <h5>Title description, Dec 7, 2017</h5>
+	    <h3><b><u>Address:</u></b><br>
+	Opposite to Government Hospital,<br> Harsha Complex, Kadur-5777548</h3>	
+    
+    <br>
+	  <p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+	</p></div>
+</div>
+
+<div class="footer">
+<p>
+  <h2>Developers:-</h2>
+  <h3>Shree Sadhguru Shreedhara Tech Developers <br> <h3>Nishanth HN | Nischith P </h3> <h3>phone:7019629509 | 7892870525</h3>
+  <h3>mail id:proosdev2020@gmail.com</h3> </h3>
+  </p>
+</div>
+
+</body>
+</html>

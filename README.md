@@ -1,2 +1,1 @@
-# vidhaatrunidhilimited.github.io
-just a sample account!
+# NISCHITH-p.github.io
