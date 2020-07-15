@@ -12,19 +12,14 @@ body {
 .header {
   padding: 20px;
   text-align: center;
-  width:1050px;
-  height: 200px;
-  text-size:10px;
   background: #0000FF;
   color: yellow;
-} 
+}
 
 /* Increase the font size of the heading */
 .header h1 {
   font-size: 40px;
-  
 }
-
 
 /* Style the top navigation bar */
 .navbar {
@@ -32,39 +27,31 @@ body {
   background-color: #333;
 }
 
+/* Style the navigation bar links */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
 .navbar
 {
-	padding: 20px;
-    text-align: center;
 	background:rgb(0,0,0);
-	width:1050px;
-	height:100px;
 	text-align:center;
 }
 .navbar ul
 {
-	padding: 20px;
-    text-align: center;
-	display:block;
-	margin:0 auto;
-	width:fit-content;
+	display:inline-flex;
 	list-style:none;
 	color:#000000;
 }
 .navbar ul li
 {
-	padding: 20px;
-    text-align: center;
-	display:inline-block;
-    float:left;
-    list-style:none;
-    padding:0 16px;
-	height:50px;
+	width:120px;
+	margin:15px;
+	padding:15px;
 }
 .navbar ul li a
 {
-	padding: 20px;
-    text-align: center;
 	text-decoration:none;
 	color:#FFFFFF;
 }
@@ -132,21 +119,13 @@ body {
   background-color: #f1f1f1;
   padding: 20px;
 }
-.fontsize1 h3{
-font-size:35px;
-}
-.fontsize1 li{
-font-size:30px;
-}
-.fontsize1 ul,li{
-line-height:50.8px;
-}
+
 /* Main column */
 .main {   
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
   background-color: white;
-  padding: 505px;
+  padding: 20px;
 }
 .main h3{
 line-height:2;
@@ -164,10 +143,9 @@ height:800px;
 left:-20px;
 top:-10px;
 }
-
 .fakeimg1 img{
 position:relative;
-width:100%;
+width:110%;
 height:80%;
 left:-20px;
 top:+13px;
@@ -180,8 +158,7 @@ top:+13px;
 
 /* Footer */
 .footer {
- padding: 10px;
-  width:1050px;
+  padding: 20px;
   text-align: left;
   background: #ddd;
 }
