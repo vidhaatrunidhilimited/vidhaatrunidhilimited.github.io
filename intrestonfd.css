@@ -114,7 +114,15 @@ body {
 {
 	color:#b2ff00;
 }
-
+.fontsize1 h3{
+font-size:35px;
+}
+.fontsize1 li{
+font-size:30px;
+}
+.fontsize1 ul,li{
+line-height:50.8px;
+}
 /* Column container */
 .row {  
   display: -ms-flexbox; /* IE10 */
