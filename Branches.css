@@ -140,6 +140,15 @@ body {
   
   padding: 505px;
 }
+.fontsize1 h3{
+font-size:35px;
+}
+.fontsize1 li{
+font-size:30px;
+}
+.fontsize1 ul,li{
+line-height:50.8px;
+}
 
 /* Fake image, just for this example */
 .fakeimg {
