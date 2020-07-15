@@ -146,9 +146,12 @@ font-size:30px;
 .side h3{
 font-size:30px;
 }
-.side h3,ul,li{
+.side h3{
 font-size:30px;
 line-height:50.8px;
+}
+.side li{
+font-size:30px;
 }
 .side h2{
 font-size:35px;
