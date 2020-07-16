@@ -133,8 +133,14 @@ font-size:30px;
 .fontsize1 ul,li{
 line-height:50.8px;
 }
+.fontsize1 h5{
+font-size:25px;
+}
 .fontsize1 h2{
 font-size:40px;
+}
+.fontsize1 b{
+font-size:35px;
 }
 
 /* Create two unequal columns that sits next to each other */
