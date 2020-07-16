@@ -132,6 +132,9 @@ font-size:30px;
 .fontsize1 ul,li{
 line-height:50.8px;
 }
+.fontsize1 h2{
+font-size:40px;
+}
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
