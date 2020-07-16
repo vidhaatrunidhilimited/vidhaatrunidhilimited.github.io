@@ -12,8 +12,8 @@ body {
 .header {
   padding: 20px;
   text-align: center;
-  width:1200px;
-  height: 200px;
+  width:1250px;
+  height: 250px;
   text-size:10px;
   background: #0000FF;
   color: yellow;
@@ -41,7 +41,7 @@ body {
 	padding: 20px;
     text-align: center;
 	background:rgb(0,0,0);
-	width:1200px;
+	width:1250px;
 	height:100px;
 	text-align:center;
 }
