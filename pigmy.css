@@ -12,7 +12,7 @@ body {
   padding: 20px;
   text-align: center;
   width:1050px;
-  height: 200px;
+  height: 250px;
   text-size:10px;
   background: #0000FF;
   color: yellow;
@@ -23,9 +23,7 @@ body {
   font-size: 60px;
   
 }
-.header p{
-	font-size:20px;
-}
+.header p{font-size:25px;}
 
 
 /* Style the top navigation bar */
@@ -195,7 +193,7 @@ padding: 10px;
   width:1050px;
   text-align: left;
   background: #ddd;
-  font-size:25px;
+  
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */

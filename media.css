@@ -13,6 +13,7 @@ body {
   padding: 20px;
   text-align: center;
    width:1200px; 
+   height:250px;
   background: #0000FF;
   color: yellow;
 }
@@ -21,9 +22,7 @@ body {
 .header h1 {
   font-size: 60px;
 }
-.header p{
-	font-size:20px;
-}
+.header p{font-size:25px;}
 
 /* Style the top navigation bar */
 .navbar {
