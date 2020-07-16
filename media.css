@@ -12,7 +12,7 @@ body {
 .header {
   padding: 20px;
   text-align: center;
-   width:1200px;
+   width:1200px; 
   background: #0000FF;
   color: yellow;
 }
@@ -40,7 +40,7 @@ body {
     text-align: center;
 	background:rgb(0,0,0);
 	width:1200px;
-	height:100px;
+	height:120px;
 	text-align:center;
 }
 .navbar ul
