@@ -12,14 +12,20 @@ body {
 .header {
   padding: 20px;
   text-align: center;
+  width:1050px;
+  height: 250px;
+  text-size:10px;
   background: #0000FF;
   color: yellow;
-}
+} 
 
 /* Increase the font size of the heading */
 .header h1 {
-  font-size: 40px;
+  font-size: 60px;
+  
 }
+.header p{font-size:25px;}
+
 
 /* Style the top navigation bar */
 .navbar {
@@ -27,31 +33,39 @@ body {
   background-color: #333;
 }
 
-/* Style the navigation bar links */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
 .navbar
 {
+	padding: 20px;
+    text-align: center;
 	background:rgb(0,0,0);
+	width:1050px;
+	height:100px;
 	text-align:center;
 }
 .navbar ul
 {
-	display:inline-flex;
+	padding: 20px;
+    text-align: center;
+	display:block;
+	margin:0 auto;
+	width:fit-content;
 	list-style:none;
 	color:#000000;
 }
 .navbar ul li
 {
-	width:120px;
-	margin:15px;
-	padding:15px;
+	padding: 20px;
+    text-align: center;
+	display:inline-block;
+    float:left;
+    list-style:none;
+    padding:0 16px;
+	height:50px;
 }
 .navbar ul li a
 {
+	padding: 20px;
+    text-align: center;
 	text-decoration:none;
 	color:#FFFFFF;
 }
@@ -110,6 +124,24 @@ body {
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
 }
+.fontsize1 h3{
+font-size:35px;
+}
+.fontsize1 li{
+font-size:30px;
+}
+.fontsize1 ul,li{
+line-height:50.8px;
+}
+.fontsize1 h5{
+font-size:25px;
+}
+.fontsize1 h2{
+font-size:40px;
+}
+.fontsize1 b{
+font-size:35px;
+}
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
@@ -125,7 +157,7 @@ body {
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
   background-color: white;
-  padding: 20px;
+  padding: 505px;
 }
 
 /* Fake image, just for this example */
@@ -136,7 +168,7 @@ body {
 }
 .fakeimg1 img{
 position:relative;
-width:110%;
+width:100%;
 height:80%;
 left:-20px;
 top:+13px;
@@ -149,7 +181,8 @@ top:+13px;
 
 /* Footer */
 .footer {
-  padding: 20px;
+ padding: 10px;
+  width:1050px;
   text-align: left;
   background: #ddd;
 }
