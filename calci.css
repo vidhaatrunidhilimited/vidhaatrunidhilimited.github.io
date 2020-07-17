@@ -13,19 +13,14 @@ body {
 .header {
   padding: 20px;
   text-align: center;
-  width:1100px;
-  height: 250px;
-  text-size:10px;
   background: #0000FF;
   color: yellow;
-} 
+}
 
 /* Increase the font size of the heading */
 .header h1 {
-  font-size: 60px;
-  
+  font-size: 40px;
 }
-.header p{font-size:25px;}
 
 /* Style the top navigation bar */
 .navbar {
@@ -33,39 +28,31 @@ body {
   background-color: #333;
 }
 
+/* Style the navigation bar links */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
 .navbar
 {
-	padding: 20px;
-    text-align: center;
 	background:rgb(0,0,0);
-	width:1100px;
-	height:100px;
 	text-align:center;
 }
 .navbar ul
 {
-	padding: 20px;
-    text-align: center;
-	display:block;
-	margin:0 auto;
-	width:fit-content;
+	display:inline-flex;
 	list-style:none;
 	color:#000000;
 }
 .navbar ul li
 {
-	padding: 20px;
-    text-align: center;
-	display:inline-block;
-    float:left;
-    list-style:none;
-    padding:0 16px;
-	height:50px;
+	width:120px;
+	margin:15px;
+	padding:15px;
 }
 .navbar ul li a
 {
-	padding: 20px;
-    text-align: center;
 	text-decoration:none;
 	color:#FFFFFF;
 }
@@ -133,31 +120,13 @@ body {
   background-color: #f1f1f1;
   padding: 20px;
 }
-.fontsize1 h3{
-font-size:35px;
-}
-.fontsize1 li{
-font-size:30px;
-}
-.fontsize1 ul,li{
-line-height:50.8px;
-}
-.fontsize1 h5{
-font-size:25px;
-}
-.fontsize1 h2{
-font-size:35px;
-}
-.fontsize1 b{
-font-size:35px;
-}
 
 /* Main column */
 .main {   
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
   background-color: white;
-  padding: 530px;
+  padding: 20px;
 }
 
 /* Fake image, just for this example */
@@ -168,7 +137,7 @@ font-size:35px;
 }
 .fakeimg1 img{
 position:relative;
-width:100%;
+width:110%;
 height:80%;
 left:-20px;
 top:+13px;
@@ -181,8 +150,7 @@ top:+13px;
 
 /* Footer */
 .footer {
-padding: 10px;
-  width:1100px;
+  padding: 20px;
   text-align: left;
   background: #ddd;
 }
@@ -221,22 +189,18 @@ body {
   margin: 0;
 }
 
+/* Header/logo Title */
 .header {
   padding: 20px;
   text-align: center;
-  width:1150px;
-  height: 200px;
-  text-size:10px;
   background: #0000FF;
   color: yellow;
-} 
+}
 
 /* Increase the font size of the heading */
 .header h1 {
   font-size: 40px;
-  
 }
-
 
 /* Style the top navigation bar */
 .navbar {
@@ -244,39 +208,31 @@ body {
   background-color: #333;
 }
 
+/* Style the navigation bar links */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
 .navbar
 {
-	padding: 20px;
-    text-align: center;
 	background:rgb(0,0,0);
-	width:1050px;
-	height:100px;
 	text-align:center;
 }
 .navbar ul
 {
-	padding: 20px;
-    text-align: center;
-	display:block;
-	margin:0 auto;
-	width:fit-content;
+	display:inline-flex;
 	list-style:none;
 	color:#000000;
 }
 .navbar ul li
 {
-	padding: 20px;
-    text-align: center;
-	display:inline-block;
-    float:left;
-    list-style:none;
-    padding:0 16px;
-	height:50px;
+	width:120px;
+	margin:15px;
+	padding:15px;
 }
 .navbar ul li a
 {
-	padding: 20px;
-    text-align: center;
 	text-decoration:none;
 	color:#FFFFFF;
 }
@@ -347,8 +303,10 @@ body {
 
 /* Main column */
 .main {   
- 
-  padding: 550px;
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
 }
 
 /* Fake image, just for this example */
@@ -372,8 +330,7 @@ top:+13px;
 
 /* Footer */
 .footer {
- padding: 10px;
-  width:1050px;
+  padding: 20px;
   text-align: left;
   background: #ddd;
 }
