@@ -18,17 +18,7 @@ body {
   background: #0000FF;
   color: yellow;
 }
-@media (min-width:1200px) {
-	.header {
-  padding: 20px;
-  text-align: center;
-  text-size:10px;
-  background: #0000FF;
-  color: yellow;
-}
-
-} 
-
+ 
 /* Increase the font size of the heading */
 .header h1 {
   font-size: 60px;
@@ -55,18 +45,6 @@ body {
 	height:100px;
 	text-align:center;
 }
-
-@media (min-width:1200px){
-	.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-.navbar
-{
-	background:rgb(0,0,0);
-	text-align:center;
-}
-}	
 
 .navbar ul
 {
