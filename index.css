@@ -45,6 +45,19 @@ body {
 	height:100px;
 	text-align:center;
 }
+
+@media (min-width:1200px){
+	.navbar
+{
+	padding: 20px;
+    text-align: center;
+	background:rgb(0,0,0);
+	width:1550px;
+	height:100px;
+	text-align:center;
+}
+	
+}
 .navbar ul
 {
 	padding: 20px;
@@ -333,7 +346,7 @@ line-height:3;
 }
 .feed u{
 font-size:45px;
-}
+} 
 .feed select,option{
 font-size:45px;
 }
